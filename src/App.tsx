@@ -10,6 +10,7 @@ function App() {
 
   useEffect(() => {
     controls.start({ rotate: 360 * page, scale: 1 });
+    console.log('teste')
   }, [page])
 
   return (
