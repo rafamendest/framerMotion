@@ -17,7 +17,7 @@ const MotionDiv = () => {
           height: 500,
           borderRadius: 30,
           margin: "auto",
-          backgroundColor: "rgba(255,255,255,0.5)",
+          backgroundColor: "rgba(112,219,147,0.5)",
           marginTop: "5rem",
         }}
         variants={variants}

@@ -22,6 +22,7 @@ function App() {
           stiffness: 250,
           damping: 20,
         }}
+        style={{ zIndex: 1 }}
       >
         <Paginator page={page} />
       </motion.div>
