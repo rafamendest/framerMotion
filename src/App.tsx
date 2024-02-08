@@ -1,26 +1,27 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import Paginator from "./components/Paginator";
 import Button from "@mui/material/Button";
-import { motion, useAnimationControls } from "framer-motion";
+import { motion } from "framer-motion";
 
 function App() {
   const [page, setPage] = useState(0);
-  const controls = useAnimationControls();
-
-  useEffect(() => {
-    controls.start({ rotate: 360 * page, scale: 1 });
-  }, [page])
 
   return (
     <div className="App">
       <motion.div
-        initial={{ scale: 0 }}
-        animate={controls}
+        key={page}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{
-          type: "spring",
-          stiffness: 250,
-          damping: 20,
+          duration: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+          scale: {
+            type: "spring",
+            damping: 25,
+            stiffness: 800,
+            restDelta: 0.001
+          }
         }}
         style={{ zIndex: 1 }}
       >

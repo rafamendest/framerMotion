@@ -1,5 +1,7 @@
+import MenuAnimation from "../MenuAnimation/MenuAnimation";
 import MotionDiv from "../MotionDiv";
 import ReOrderGroup from "../ReOrderGroup";
+import Rotate from "../Rotate";
 import Scroll from "../Scroll";
 
 interface PaginatorProps {
@@ -11,9 +13,9 @@ const Paginator = ({ page }: PaginatorProps) => {
     const components: any = {
         0: <MotionDiv />,
         1: <Scroll />,
-        2: <ReOrderGroup />,
-        3: <>TESTANDO 4</>,
-        4: <>TESTANDO 5</>,
+        2: <div style={{marginTop: '200px'}}><ReOrderGroup /></div>,
+        3: <Rotate />,
+        4: <MenuAnimation />,
     }
 
     return (
