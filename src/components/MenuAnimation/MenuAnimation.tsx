@@ -52,7 +52,7 @@ const MenuAnimation = () => {
             width: "300px",
             height: "50px",
           }}
-          whileTap={{ scale: 0.97 }}
+          whileTap={{ scale: 0.90 }}
           onClick={() => setIsOpen(!isOpen)}
         >
           Menu

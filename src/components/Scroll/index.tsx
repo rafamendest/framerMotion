@@ -1,9 +1,11 @@
 import { motion, useScroll } from "framer-motion";
 import { LoremIpsum } from "../Lorem";
 import "../Scroll/style.css";
+import { useEffect } from "react";
 
 const Scroll = () => {
   const { scrollYProgress } = useScroll();
+
   return (
     <>
       <motion.div

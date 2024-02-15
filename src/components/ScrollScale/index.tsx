@@ -26,6 +26,9 @@ const ScrollScale = () => {
             background: "red",
             margin: "100px auto 100px auto",
           }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 2 }}
         />
       </motion.div>
       <LoremIpsum />
