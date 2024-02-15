@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <motion.div
         key={page}
-        initial={{ opacity: 0, scale: 0.5 }}
+        initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
           duration: 0.3,
@@ -20,7 +20,6 @@ function App() {
             type: "spring",
             damping: 25,
             stiffness: 800,
-            restDelta: 0.001
           }
         }}
         style={{ zIndex: 1 }}

@@ -6,6 +6,13 @@ const MotionDiv = () => {
     variantB: { scale: 1.25 },
   };
 
+  // spring: Cria uma animação elástica e fluida, simulando o comportamento de uma mola física.
+
+  // tween: Realiza uma animação suave entre os estados inicial e final, utilizando um algoritmo de interpolação para calcular os valores intermediários.
+
+  // keyframes: Define uma série de valores de estado intermediários para a animação, permitindo criar uma animação com vários pontos-chave.
+
+
   return (
     <>
       <div id="test">
@@ -23,7 +30,7 @@ const MotionDiv = () => {
         variants={variants}
         initial="variantA"
         whileHover="variantB"
-        transition={{ type: "spring", stiffness: 300, damping: 20, mass: 1 }}
+        transition={{ type: "spring", stiffness: 300, damping: 10 }}
       />
     </>
   );
