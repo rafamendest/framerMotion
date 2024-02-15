@@ -23,7 +23,7 @@ const MotionDiv = () => {
         variants={variants}
         initial="variantA"
         whileHover="variantB"
-        transition={{ type: "spring", stiffness: 500, damping: 20, mass: 1 }}
+        transition={{ type: "spring", stiffness: 300, damping: 20, mass: 1 }}
       />
     </>
   );
